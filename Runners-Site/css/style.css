@@ -1,0 +1,245 @@
+@charset "UTF-8";
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.account-data {
+  background-color: #26293b;
+  padding: 40px 0;
+}
+
+.button-save, .button-send {
+  color: #0a58ca;
+  background-color: #4da9ff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  border: none;
+  text-transform: uppercase;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.button-save:hover, .button-send:hover {
+  background-color: #0a58ca;
+  color: #FFF;
+  border: none;
+}
+.button-save:focus, .button-send:focus {
+  background-color: #0a58ca;
+  color: #FFF;
+  border: none;
+}
+
+.data-user {
+  background-color: #31354e;
+  border-radius: 15px;
+  padding: 40px;
+  margin-bottom: 40px;
+}
+.data-user h4 {
+  color: #c8d43b;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 130%;
+}
+.data-user__text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 150%;
+  color: #fff;
+  margin-top: 17px;
+  column-gap: 37px;
+}
+.data-user .text-item {
+  position: relative;
+}
+.data-user .text-item:before {
+  content: '●';
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  top: 0px;
+  margin-left: -22px;
+}
+.data-user .text-item:first-child:before {
+  content: '';
+}
+.data-user__buttons .buttons-list {
+  padding: 0;
+  margin: 0;
+  gap: 10px;
+}
+.data-user__buttons .buttons-list .account-buttons {
+  list-style-type: none;
+}
+.data-user__buttons .button-profile {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 180%;
+  color: #4da9ff;
+  background-color: #373d61;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.data-user__buttons .button-profile:hover {
+  color: #c8d43b;
+  outline: none;
+  background-color: #373d61;
+}
+
+.inputs_top {
+  padding: 20px 0;
+}
+
+.row {
+  --bs-gutter-x:40px;
+}
+
+.input-block label {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 150%;
+  color: #fff;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+.input-block .input {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #86b7fe;
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+  color: #FFF;
+}
+.input-block .input:focus {
+  background-color: transparent;
+  border-color: #86b7fe;
+  outline: none;
+}
+.input-block .input:placeholder {
+  color: #adb5bd;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  outline: none;
+}
+.input-block .input[type=date]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+.input-block .input[type=number]::-webkit-inner-spin-button {
+  appearance: none;
+}
+.input-block .select {
+  background-color: transparent;
+  border: 1px solid;
+  border-color: #86b7fe;
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+  color: #adb5bd;
+  min-height: 38px;
+  appearance: none;
+}
+.input-block .select::-ms-expand {
+  display: none;
+}
+.input-block .select:focus {
+  outline: none;
+}
+.input-block .input-decoration {
+  position: relative;
+  text-transform: none;
+}
+.input-block .input-decoration:after {
+  content: '*';
+  color: #ff5e5e;
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  right: -10px;
+  top: -3px;
+}
+.input-block .label-sms {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 150%;
+  color: #FFC107;
+  box-sizing: border-box;
+}
+.input-block .input--disabled {
+  background-color: rgba(173, 181, 189, 0.1);
+  border: 1px solid;
+  border-color: #86b7fe;
+  padding: 6px;
+  border-radius: 4px;
+  width: 100%;
+  color: #FFF;
+}
+
+.input-number {
+  margin: 20px 0 18px 0;
+}
+
+.input-sms {
+  margin-bottom: 20px;
+}
+
+.top-indentation {
+  margin-top: 20px;
+}
+
+.indentation {
+  margin: 20px 0;
+}
+
+@media (max-width: 850px) {
+  .input-sms {
+    margin-bottom: 0;
+  }
+
+  .input-sms {
+    --bs-gutter-y:20px;
+  }
+
+  .data-user__buttons {
+    margin-bottom: 0;
+  }
+
+  .img-account {
+    padding-bottom: 25px;
+  }
+
+  .button-save {
+    width: 47%;
+  }
+
+  .button-send {
+    width: 47%;
+  }
+}
+@media (max-width: 575px) {
+  .button-save {
+    width: 100%;
+  }
+
+  .button-send {
+    width: 100%;
+  }
+
+  .input-block {
+    margin-bottom: 10px;
+  }
+}
